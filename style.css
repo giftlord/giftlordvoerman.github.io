@@ -1,0 +1,60 @@
+.jumbotron{
+    padding-top: 5rem;
+    background-color: #c7d4fd;
+}
+
+#about{
+    background-color: #F3F4F5;
+}
+
+
+#project{
+    background-color: #c7d4fd;
+}
+
+#contack{
+    background-color: #F3F4F5;
+}
+
+section{
+    padding-top: 5rem;
+}
+
+.nama{
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.status{
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+
+}
+
+
+
+
+

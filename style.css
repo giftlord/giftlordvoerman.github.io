@@ -1,15 +1,125 @@
 .jumbotron{
     padding-top: 5rem;
-    background-color: #c7d4fd;
+    background-color: #6c757d;
+    color: white;
 }
 
-#about{
+.profil{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#about {
     background-color: #F3F4F5;
+
 }
 
 
-#project{
-    background-color: #c7d4fd;
+#my-project{
+    background-color: #6c757d;
+}
+
+/* my project section */
+.project-box{
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.project-box::before{
+    content: 'MY';
+    position: absolute;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    top: 50px;
+    left: 50%;
+    transform: translate3d(-50%, 0,20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.project-box:hover::before{
+    opacity: 0.5;
+}
+
+.project-box::after{
+    content: 'PROJECT';
+    position: absolute;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    top: 400px;
+    left: 50%;
+    transform: translate3d(-50%, 0,20px);    
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.project-box:hover::after{
+    opacity: 0.5;
+}
+
+.project-box:hover::after{
+    opacity: 0.5;
+}
+
+.project-name{
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    transform: translate3d(0,0,50px);
+    transition: 0.5s;
+}
+
+.project-box:hover .project-name{
+    top: 25px;
+    opacity: 1;
+}
+
+.project-detail-button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%,0,100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.project-box:hover .project-detail-button{
+    opacity: 1;
+    bottom: 25px;
+}
+
+.project-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,100px);
+    max-width: 250px;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.project-box:hover .project-img{
+    transform: translate3d(-50%,-50%,100px)  scale(1.1);
+}
+
+.btn{
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    color: black;
 }
 
 #contack{
@@ -20,39 +130,21 @@ section{
     padding-top: 5rem;
 }
 
-.nama{
-    font-family: monospace;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .10em;
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+.col1{
+    color: black;
 }
-
-.status{
-    font-family: monospace;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .10em;
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+.col{
+    color: white;
+}
+.footer{
+    padding-top: 15px;
+}
+.col2{
+    color: black
 }
 
 
-@keyframes typing {
-    from {
-        width: 0
-    }
 
-    to {
-        width: 100%
-    }
-
-}
 
 
 

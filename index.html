@@ -17,6 +17,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
 
@@ -24,11 +27,16 @@
   </head>
   <body id="home">
     <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand"  href="https://www.instagram.com/giftcleverson22/" target="_blank">Giftlord voerman</a>
+        <a
+          class="navbar-brand"
+          href="https://www.instagram.com/giftcleverson22/"
+          target="_blank"
+        >
+          <img class="profil" src="img/profil/gift.jpg" alt="" />Giftlord
+          voerman</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -60,7 +68,7 @@
     </nav>
     <!-- akhir navbar -->
     <!-- jumbtron -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center text-dark">
       <img
         src="img/profil/profil (2).jpg"
         alt="Giftlord voerman"
@@ -68,7 +76,7 @@
         class="rounded-circle img-thumbnail"
       />
       <h1 class="nama display-4 fw-bold">Giftlord Voerman</h1>
-      <p class=" status lead fw-bold">Mahasiswa | Pelajar </p>
+      <p class="status lead fw-bold"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#f3f4f5"
@@ -80,9 +88,14 @@
     <!-- akhir jumbtron -->
     <!-- about -->
     <section id="about">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-duration="300"
+      >
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col text-dark">
             <h2>About Me</h2>
           </div>
         </div>
@@ -90,72 +103,84 @@
           <div class="about col-md-4">
             <p>
               Nama saya giftlord voerman Saya seorang mahasiswa fakultas teknik
-              jurusan elektro program studi informatika✋<span class="typing"></span>
+              jurusan elektro program studi informatika hallo semuanya✋<span
+                class="typing"
+              ></span>
             </p>
           </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#c7d4fd"
+          fill="#6c757d"
           fill-opacity="1"
-          d="M0,256L30,250.7C60,245,120,235,180,240C240,245,300,267,360,250.7C420,235,480,181,540,165.3C600,149,660,171,720,181.3C780,192,840,192,900,192C960,192,1020,192,1080,202.7C1140,213,1200,235,1260,218.7C1320,203,1380,149,1410,122.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          d="M0,64L48,96C96,128,192,192,288,229.3C384,267,480,277,576,277.3C672,277,768,267,864,245.3C960,224,1056,192,1152,176C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
     </section>
     <!-- akhir about -->
 
     <!-- project -->
-    <section id="project">
+    <!-- <section id="project">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="300">
           <div class="col">
             <h2>My Project</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img
                 src="img/project/project1.png"
                 class="card-img-top"
                 alt="project-1"
               />
-              <div class="card-body">
-                <p class="card-text">
-                  Gallery Anime Kimetsu No Yaiba
-                </p>
-                <a href="https://gallery-kimetsu-no-yaiba.giftcleverson.repl.co/" class="project-link">Lihat Project</a>
+              <div class="card-body bg-dark text-white">
+                <p class="card-text">Gallery Anime Kimetsu No Yaiba</p>
+                <a
+                  href="https://gallery-kimetsu-no-yaiba.giftcleverson.repl.co/"
+                  target="_blank"
+                  class="project-link"
+                  >Lihat Project</a
+                >
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img
                 src="img/project/project2.png"
                 class="card-img-top"
                 alt="project-2"
               />
-              <div class="card-body">
-                <p class="card-text">
-                  NickName Animation
-                </p>
-                <a href="https://nickname-animation.giftcleverson.repl.co/" class="project-link">Lihat Project</a>
+              <div class="card-body bg-dark text-white">
+                <p class="card-text">NickName Animation</p>
+                <a
+                  href="https://nickname-animation.giftcleverson.repl.co/"
+                  target="_blank"
+                  class="project-link"
+                  >Lihat Project</a
+                >
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card mb-3">
+            <div class="card mb-3" data-aos="flip-left" data-aos-delay="300"
+            data-aos-duration="500">
               <img
                 src="img/project/project3.png"
                 class="card-img-top"
                 alt="project-3"
               />
-              <div class="card-body">
-                <p class="card-text">
-                  Artikel
-                </p>
-                <a href="https://artikel.giftcleverson.repl.co/" class="project-link">Lihat Project</a>
+              <div class="card-body bg-dark text-white">
+                <p class="card-text">Artikel</p>
+                <a
+                  href="https://artikel.giftcleverson.repl.co/"
+                  target="_blank"
+                  class="project-link"
+                  >Lihat Project</a
+                >
               </div>
             </div>
           </div>
@@ -165,7 +190,92 @@
         <path
           fill="#f3f4f5"
           fill-opacity="1"
-          d="M0,224L30,218.7C60,213,120,203,180,213.3C240,224,300,256,360,261.3C420,267,480,245,540,224C600,203,660,181,720,165.3C780,149,840,139,900,138.7C960,139,1020,149,1080,154.7C1140,160,1200,160,1260,170.7C1320,181,1380,203,1410,213.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section> -->
+    <section id="my-project">
+      <div class="container">
+        <div
+          class="row text-center mb-3"
+          data-aos="zoom-in"
+          data-aos-offset="300"
+          data-aos-duration="300"
+        >
+          <div class="col text-dark">
+            <h2>My Project</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-6 col-lg-4 mb-3"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          >
+            <div class="project-box">
+              <h4 class="project-name">Gallery</h4>
+              <img
+                src="img/project-img/project1.png"
+                alt="gallery Kimetsu No Yaiba"
+                class="project-img"
+              />
+              <a
+                href="https://gallery-kimetsu-no-yaiba.giftcleverson.repl.co/"
+                target="_blank"
+                class="btn btn-light project-detail-button"
+                >Show Details</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 mb-3"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
+            <div class="project-box">
+              <h4 class="project-name">Nickname</h4>
+              <img
+                src="img/project-img/project2.png"
+                alt="nickname"
+                class="project-img"
+              />
+              <a
+                href="https://nickname-animation.giftcleverson.repl.co/"
+                target="_blank"
+                class="btn btn-light project-detail-button"
+                >Show Details</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4 mb-3"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
+            <div class="project-box">
+              <h4 class="project-name">Artikel</h4>
+              <img
+                src="img/project-img/project3.png"
+                alt="artikel"
+                class="project-img"
+              />
+              <a
+                href="https://artikel.giftcleverson.repl.co/"
+                target="_blank"
+                class="btn btn-light project-detail-button"
+                >Show Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f3f4f5"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
     </section>
@@ -173,9 +283,14 @@
 
     <!-- contack -->
     <section id="contack">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-duration="300"
+      >
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col2">
             <h2>Contack Me</h2>
           </div>
         </div>
@@ -213,31 +328,44 @@
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-dark">Kirim</button>
+              <button
+                class="btn btn-dark btn-loading d-none"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span
+                >Loading...
+              </button>
             </form>
           </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#0d6efd"
+          fill="#212529"
           fill-opacity="1"
-          d="M0,0L30,37.3C60,75,120,149,180,181.3C240,213,300,203,360,181.3C420,160,480,128,540,128C600,128,660,160,720,170.7C780,181,840,171,900,170.7C960,171,1020,181,1080,186.7C1140,192,1200,192,1260,176C1320,160,1380,128,1410,112L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
     </section>
     <!-- akhir contack -->
 
     <!-- footer -->
-    <footer class="bg-primary text-white text-center pb-1">
+    <footer class="bg-dark text-white text-center pb-1">
       <p>
         Create by
         <a
-          href="https://www.instagram.com/giftcleverson22/" target="_blank"
+          href="https://www.instagram.com/giftcleverson22/"
+          target="_blank"
           class="text-white fw-bold"
           >Giftlord Voerman</a
         >
-        <i class="bi bi-heart text-dark"></i>
+        <i class="bi bi-controller"></i>
       </p>
     </footer>
     <!-- akhir footer -->
@@ -246,7 +374,81 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "zoom-in-up";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 500;
+      });
+
+      AOS.init({});
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", {
+        duration: 1.5,
+        delay: 1,
+        text: "Mahasiswa | Pelajar",
+      });
+      gsap.from(".jumbotron img", { duration: 1.5, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", {
+        duration: 2,
+        y: "-100%",
+        opacity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".display-4", {
+        duration: 1.2,
+        x: -100,
+        opacity: 0,
+        ease: "slow",
+      });
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwNF7lz4eqn7KBQB2LTegN75hjaJS-KXoybQA6dsGSGh1jdd1Nsv-5AFxB5pE9Kyo4vzg/exec";
+      const form = document.forms["Giftlord-voerman-contack-form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            // tmapilakn alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".project-box"), {
+        max: 35,
+        speed: 1000,
+        glare: true,
+      });
     </script>
   </body>
 </html>
